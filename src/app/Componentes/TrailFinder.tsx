@@ -136,7 +136,7 @@ export default function TrailFinder(){
         <div className="mt-6 flex justify-center">
           <button className="w-52 bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500" type="submit">ENVIE</button>
         </div>
-        {formSubmitted && <p className="mt-4 text-green-500">Enviado com sucesso</p>}
+        {formSubmitted && <p className="mt-4 text-green-500">Enviado com  sucesso</p>}
       </form>
     </section>
         </>
