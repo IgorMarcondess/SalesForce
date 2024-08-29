@@ -14,8 +14,8 @@ export default function Header() {
             <div className="w-full h-28 bg-azulEscuro-100 flex p-2 items-center justify-between md:pl-16 md:pr-16">
                 <img className="w-28" src={LogoSalesForce.src} />
                 <div className="flex justify-end gap-4">
-                    <h1 className="flex text-lg text-slate-50 font-medium text-base hover:bg-slate-50 hover:text-azulEscuro-100 hover:p-1 hover:rounded-lg md:flex md:font-black md:text-2xl">Trail Finder</h1>
-                    <h1 className="flex text-lg text-slate-50 font-medium text-base hover:bg-slate-50 hover:text-azulEscuro-100 hover:p-1 hover:rounded-lg md:flex md:font-black md:text-2xl">Trail Blazers</h1>
+                    <h1 className="flex text-slate-50 font-medium text-base hover:bg-slate-50 hover:text-azulEscuro-100 hover:p-1 hover:rounded-lg md:flex md:font-black md:text-2xl">Trail Finder</h1>
+                    <h1 className="flex text-slate-50 font-medium text-base hover:bg-slate-50 hover:text-azulEscuro-100 hover:p-1 hover:rounded-lg md:flex md:font-black md:text-2xl">Trail Blazers</h1>
                 <div className="relative inline-block text-left">
                         <div>
                             <button
