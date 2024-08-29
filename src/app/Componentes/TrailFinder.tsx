@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react';
 import interrogacao from "../../../public/formulario/interrogacao.png"
+import Link from 'next/link';
 
 export default function TrailFinder(){
     const [data, setData] = useState({
@@ -14,14 +15,14 @@ export default function TrailFinder(){
       });
       const [formSubmitted, setFormSubmitted] = useState(false);
     
-      const handleFormEdit = (event, name:any) => {
+      const handleFormEdit = (event:any, name:any) => {
         setData({
           ...data,
           [name]: event.target.value
         });
       };
     
-      const handleForm = async (event) => {
+      const handleForm = async (event:any) => {
         try {
           event.preventDefault();
     
@@ -135,6 +136,11 @@ export default function TrailFinder(){
         </div>
         <div className="mt-6 flex justify-center">
           <button className="w-52 bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500" type="submit">ENVIE</button>
+        </div>
+        <div className='w-full h-6 flex justify-center mt-4'>
+          <Link href="">
+            <p className='text-xs'>Colaborador Sales Force? Faça login aqui!</p>
+          </Link>
         </div>
         {formSubmitted && <p className="mt-4 text-green-500">Enviado com  sucesso</p>}
       </form>
