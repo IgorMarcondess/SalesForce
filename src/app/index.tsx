@@ -1,12 +1,12 @@
 import Header from "./Componentes/Header";
 import Footer from "./Componentes/Footer";
-import Paginainicial from "./Componentes/Pagina Inicial/PaginaInicial"
+import Personagem from "./Componentes/personagens"
 
 export default function index(){
     return(
         <>
         <Header />
-        <Paginainicial/>
+        <Personagem/>
         <Footer />
         </>
     )

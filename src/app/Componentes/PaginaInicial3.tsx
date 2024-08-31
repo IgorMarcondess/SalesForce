@@ -2,7 +2,7 @@
 import dados1 from "./Pagina Inicial/imgs-paginaInicial1.json"
 import dados2 from "./Pagina Inicial/imgs-paginaInicial2.json"
 import imagem from "../../../public/personagem.jpeg"
-import Link from "next/link"
+import Link from "next/link";
 
 interface dados {
     src : string;
@@ -52,7 +52,7 @@ export default function PaginaInicial3(){
                             <h3 className="text-lg font-semibold">Faça o teste agora mesmo!</h3>
                         </div>
                         <div>
-                            <Link href="./TrailFinder">
+                            <Link href={"TrailFinder"}>
                                 <button className="px-6 py-2 bg-blue-500 text-white rounded-lg font-bold hover:bg-blue-600">
                                     Questionário
                                 </button>
