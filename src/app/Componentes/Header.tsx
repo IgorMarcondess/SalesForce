@@ -1,7 +1,8 @@
 'use client'
 import { useState } from "react";
 import LogoSalesForce from "./../../../public/Logo_SalesForce.svg";
-import { Link, NavLink } from "react-router-dom";
+import Link from "next/link";
+
 
 
 export default function Header() {
@@ -14,10 +15,16 @@ export default function Header() {
     return (
         <header>
             <div className="w-full h-28 bg-azulEscuro-100 flex p-2 items-center justify-between md:pl-16 md:pr-16">
-                <img className="w-28" src={LogoSalesForce.src} />
+                <Link href={"./"}>
+                    <img className="w-28" src={LogoSalesForce.src} />
+                </Link>
                 <div className="flex justify-end gap-4 items-center text-center">
+                    <Link href={"./trailfinder"}>
                         <h1 className="flex text-slate-50 font-black text-xs hover:bg-slate-50 hover:text-azulEscuro-100 hover:p-1 hover:rounded-lg md:flex md:font-black md:text-2xl">Trail Finder</h1>
-                    <h1 className="flex text-slate-50 font-black text-xs hover:bg-slate-50 hover:text-azulEscuro-100 hover:p-1 hover:rounded-lg md:flex md:font-black md:text-2xl">Trail Blazers</h1>
+                    </Link>
+                    <Link href={"https://trailhead.salesforce.com/trailblazers"} target="_blank">
+                        <h1 className="flex text-slate-50 font-black text-xs hover:bg-slate-50 hover:text-azulEscuro-100 hover:p-1 hover:rounded-lg md:flex md:font-black md:text-2xl">Trail Blazers</h1>
+                    </Link>
                 <div className="relative inline-block text-left">
                         <div>
                             <button
