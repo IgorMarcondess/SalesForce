@@ -4,6 +4,8 @@ import interrogacao from "../../../public/formulario/interrogacao.png"
 import Link from 'next/link';
 import Header from "../Componentes/Header"
 import Footer from "../Componentes/Footer"
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 export default function TrailFinder(){
     const [data, setData] = useState({
@@ -24,57 +26,79 @@ export default function TrailFinder(){
         });
       };
     
-      const handleForm = async (event:any) => {
-        try {
-          event.preventDefault();
+      // const handleForm = async (event:any) => {
+      //   try {
+      //     event.preventDefault();
     
-          // Verifica se todos os campos obrigatórios foram preenchidos
-          const formIsValid = Object.values(data).every(value => value !== '');
-          if (!formIsValid) {
-            alert('Por favor, preencha todos os campos obrigatórios.');
-            return;
-          }
+      //     // Verifica se todos os campos obrigatórios foram preenchidos
+      //     const formIsValid = Object.values(data).every(value => value !== '');
+      //     if (!formIsValid) {
+      //       alert('Por favor, preencha todos os campos obrigatórios.');
+      //       return;
+      //     }
     
-          // Verifica se o e-mail possui o formato correto
-          const emailIsValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email);
-          if (!emailIsValid) {
-            alert('Por favor, insira um endereço de e-mail válido.');
-            return;
-          }
+      //     // Verifica se o e-mail possui o formato correto
+      //     const emailIsValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email);
+      //     if (!emailIsValid) {
+      //       alert('Por favor, insira um endereço de e-mail válido.');
+      //       return;
+      //     }
     
-          const response = await fetch(`http://localhost:8080/projetoTeste/rest/trailFinder/inserir`, {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(data)
-          });
+      //     const response = await fetch(`http://localhost:8080/projetoTeste/rest/trailFinder/inserir`, {
+      //       method: 'POST',
+      //       headers: {
+      //         'Content-Type': 'application/json'
+      //       },
+      //       body: JSON.stringify(data)
+      //     });
     
-          if (response.ok) {
-            const text = await response.text();
-            const json = text ? JSON.parse(text) : {};
-            console.log(json);
-            setFormSubmitted(true);
-            window.location.href = "/sucesso";
-          } else {
-            console.error('Erro ao enviar formulário:', response.statusText);
-          }
-        } catch (err) {
-          console.error('Erro ao enviar formulário:', err);
-        }
-      };
+      //     if (response.ok) {
+      //       const text = await response.text();
+      //       const json = text ? JSON.parse(text) : {};
+      //       console.log(json);
+      //       setFormSubmitted(true);
+      //       window.location.href = "/sucesso";
+      //     } else {
+      //       console.error('Erro ao enviar formulário:', response.statusText);
+      //     }
+      //   } catch (err) {
+      //     console.error('Erro ao enviar formulário:', err);
+      //   }
+      // };
     
-      function handleAlert1() {
-        alert(`Para Empresas do Tipo Serviços:
-                - Microempresa (ME): Até 9 empregados
-                - Empresa de Pequeno Porte (EPP): De 10 a 49 empregados
-                - Empresa de Médio Porte: De 50 a 99 empregados
-                - Grandes Empresas: 100 ou mais empregados`);
+      // function handleAlert1() {
+      //   alert(`Para Empresas do Tipo Serviços:
+      //           - Microempresa (ME): Até 9 empregados
+      //           - Empresa de Pequeno Porte (EPP): De 10 a 49 empregados
+      //           - Empresa de Médio Porte: De 50 a 99 empregados
+      //           - Grandes Empresas: 100 ou mais empregados`);
+      // }
+    const [envioEmail, setEnvioEmail] = useState(false)
+
+    function sendEmail(e:any){
+      e.preventDefault();
+
+      const templateParams = {
+        from_name: data.name,
+        to_name: data.name,
+        date: data.dataContato,
+        cargo: data.cargo,
+        tamanho: data.tipoEmpresa,
+        setor: data.setor,
+        probabilidade: data.probabilidadeContratacao,
+        email: data.email
       }
+
+      emailjs.send('service_qmm3iu1', 'template_3qvocn5', templateParams, '7q-vvlP87kR_3LStm')
+      .then((response)=>{
+        console.log("Email enviado", response.status);
+      })
+    }
+
     return(
         <>
         <section className="p-2 bg-gray-100 flex flex-col justify-center">
-      <form className="bg-white p-6 rounded-lg shadow-md" onSubmit={handleForm}>
+      <form className="bg-white p-6 rounded-lg shadow-md" onSubmit={sendEmail}>
         <div className="flex items-center mb-4">
           <svg className="w-8 h-8 mr-2 text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
             <path fill="none" d="M0 0h24v24H0z"></path>
@@ -114,7 +138,7 @@ export default function TrailFinder(){
             <option value="Média">Média</option>
             <option value="Grande">Grande</option>
           </select>
-          <img className="w-6 h-6 ml-2 cursor-pointer" src={interrogacao.src} onClick={handleAlert1} alt="Interrogação" />
+          {/* <img className="w-6 h-6 ml-2 cursor-pointer" src={interrogacao.src} onClick={handleAlert1} alt="Interrogação" /> */}
         </div>
         </div>
         <div className="mb-4">
