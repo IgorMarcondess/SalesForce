@@ -22,7 +22,7 @@ export default function Footer(){
                 <h1 className="md:text-white md:font-bold">Mapa de navegação</h1>
                 <div className="flex md:flex md:gap-3 md:justify-center md:text-white">
                     <div>
-                        <p>Página</p>
+                        <p>Trail Finder</p>
                     </div>
                     <div>
                         <p>Página</p>
