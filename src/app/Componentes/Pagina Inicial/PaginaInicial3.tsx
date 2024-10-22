@@ -51,12 +51,6 @@ export default function PaginaInicial3() {
         ))}
       </div>
 
-      <div className="text-center mt-12">
-        <a href="/Personagens" className="text-2xl text-blue-600 hover:underline mb-8">
-          Veja o significado dos personagens
-        </a>
-      </div>
-
       <section className="p-6 bg-white w-5/4 h-auto bg-azulEscuro-100">
         <h1 className="text-4xl font-bold text-center mb-6">Trail Finder</h1>
         <div className="flex flex-col md:flex-row items-center md:justify-center">

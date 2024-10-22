@@ -1,3 +1,4 @@
+//import Index from "./PaginaInicial/page"
 import Index from "./PaginaInicial/page"
 
 
