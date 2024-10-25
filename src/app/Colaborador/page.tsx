@@ -49,10 +49,11 @@ return (
       {/* Menu de navegação */}
       <div className="w-56 border-r-2 border-black p-5">
         <ul className="space-y-4">
-          <li className={""}>Opção 1</li>
+          <li className={`cursor-pointer ${selectedOption === "option1" ? "font-bold" : ""}`}
+            onClick={() => setSelectedOption("option1")}>Formulários</li>
 
           <li className={`cursor-pointer ${selectedOption === "option2" ? "font-bold" : ""}`}
-            onClick={() => setSelectedOption("option2")}> Opção 2</li>
+            onClick={() => setSelectedOption("option2")}>Dashboard</li>
         </ul>
       </div>
 
@@ -61,6 +62,7 @@ return (
         {selectedOption === "option1" ? (
           <div>
             {/* Conteúdo da Opção 1 */}
+              <h1 className="flex justify-center text-gray-800 font-extrabold text-xl mb-6">FORMULÁRIOS</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center">
               {data.map((item) => (
                 <div className="flex flex-col justify-center">
