@@ -31,9 +31,10 @@ export default function PaginaInicial3() {
           <div className="flex flex-col items-center md:items-start mb-6 md:mb-0">
             <div className="max-w-lg text-center md:text-left mb-4">
               <h2 className="text-lg mb-4">
-                O Trail Finder é um questionário onde o usuário responderá perguntas que descrevem suas principais características,
-                como por exemplo, o tamanho da empresa e o ramo de atuação. Vamos coletar esses dados e como resultado desse questionário
-                mostrar cards com as melhores ferramentas e serviços, além de sugerir uma solução para o problema apresentado.
+              Conheça o <strong>Trail Finder</strong> Aqui, você poderá responder a algumas perguntas simples sobre sua empresa – como seu tamanho e ramo de atuação. 
+              Com essas respostas, vamos recomendar as ferramentas e serviços 
+              mais adequados para as suas necessidades. Além disso, oferecemos uma solução personalizada para os desafios que você nos apresentar. 
+              Vamos começar essa jornada juntos?
               </h2>
               <h3 className="text-lg font-semibold">Faça o teste agora mesmo!</h3>
             </div>
