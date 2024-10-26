@@ -46,7 +46,7 @@ export default function PaginaInicial3() {
             </div>
           </div>
           <a className="flex-shrink-0">
-            <img src={imagem.src} className="w-52 h-auto" alt="personagem Trail Finder" />
+            <img src={imagem.src} className="w-52 h-auto" alt="Personagem Trail Finder" />
           </a>
         </div>
       </section>

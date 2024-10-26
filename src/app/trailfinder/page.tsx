@@ -129,7 +129,7 @@ export default function TrailFinder() {
   return (
     <>
       <section className="p-2 bg-gray-100 flex justify-center items-center gap-8">
-        <form className="w-full sm:flex sm:flex-col sm:bg-white sm:p-6 sm:rounded-lg sm:shadow-md sm:w-full md:flex md:flex-col md:bg-white md:p-6 md:rounded-lg md:shadow-md md:w-[40vw]" onSubmit={handleForm}>
+        <form className="w-full sm:flex sm:flex-col sm:bg-white sm:p-6 sm:rounded-lg sm:shadow-md sm:w-full md:flex md:flex-col md:bg-white md:p-6 md:rounded-lg md:shadow-md md:w-[40vw] lg:my-20" onSubmit={handleForm}>
           <div className="flex items-center mb-4">
             <svg className="w-8 h-8 mr-2 text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
               <path fill="none" d="M0 0h24v24H0z"></path>
@@ -204,7 +204,7 @@ export default function TrailFinder() {
         </form>
         <div>
           <a className="flex-shrink-0">
-            <img src={imagem.src} className="hidden sm:hidden md:flex md:w-[23vw] md:h-[30vw]" alt="personagem Trail Finder" />
+            <img src={imagem.src} className="hidden sm:hidden md:flex md:w-[23vw] md:h-[30vw]" alt="Personagem Trail Finder" />
           </a>
         </div>
         <div data-vw="true" className="fixed bottom-0 right-0 z-50"></div>

@@ -17,10 +17,10 @@ export default function PaginaInicial2(){
                         ></path>
                     </svg>
                     </div>   
-                    <img src={Parceria1.src} className="md:w-[18vw] md:grayscale md:hover:grayscale-0 md:duration-1000"/>
-                    <img src={Parceria2.src} className="md:w-[18vw] md:grayscale md:hover:grayscale-0 md:duration-1000"/>
-                    <img src={Parceria3.src} className="md:w-[18vw] md:grayscale md:hover:grayscale-0 md:duration-1000"/>
-                    <img src={Parceria4.src} className="md:w-[18vw] md:grayscale md:hover:grayscale-0 md:duration-1000"/>
+                    <img src={Parceria1.src} className="md:w-[18vw] md:grayscale md:hover:grayscale-0 md:duration-1000" alt="Imagem da logo parceiro"/>
+                    <img src={Parceria2.src} className="md:w-[18vw] md:grayscale md:hover:grayscale-0 md:duration-1000" alt="Imagem da logo parceiro"/>
+                    <img src={Parceria3.src} className="md:w-[18vw] md:grayscale md:hover:grayscale-0 md:duration-1000" alt="Imagem da logo parceiro"/>
+                    <img src={Parceria4.src} className="md:w-[18vw] md:grayscale md:hover:grayscale-0 md:duration-1000" alt="Imagem da logo parceiro"/>
                 </div>
             </main>
         </>

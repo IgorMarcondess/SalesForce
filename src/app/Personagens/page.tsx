@@ -15,7 +15,6 @@ export default function personagens(){
     <>
        <nav className="bg-white">
             <section className="space-y-8 flex flex-col justify-center items-center mt-8 mb-8">
-                {/* Einstein */}
                 <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8">
                 <a className="flex-shrink-0">
                     <img src={Einstein.src} className="w-40 h-auto object-cover rounded-full" alt="Einstein" />
@@ -32,7 +31,6 @@ export default function personagens(){
                 </div>
                 </div>
 
-                {/* Appy */}
                 <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8">
                 <a className="flex-shrink-0">
                     <img src={Appy.src} className="w-40 h-auto object-cover rounded-full" alt="Appy" />
@@ -49,7 +47,6 @@ export default function personagens(){
                 </div>
                 </div>
 
-                {/* Astro */}
                 <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8">
                 <a className="flex-shrink-0">
                     <img src={Astro.src} className="w-40 h-auto object-cover rounded-full" alt="Astro" />
@@ -66,7 +63,6 @@ export default function personagens(){
                 </div>
                 </div>
 
-                {/* Cloudy */}
                 <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8">
                 <a className="flex-shrink-0">
                     <img src={Cloudy.src} className="w-40 h-auto object-cover rounded-full" alt="Cloudy" />
@@ -83,7 +79,6 @@ export default function personagens(){
                 </div>
                 </div>
 
-                {/* Codey */}
                 <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8">
                 <a className="flex-shrink-0">
                     <img src={Codey.src} className="w-40 h-auto object-cover rounded-full" alt="Codey" />
@@ -100,7 +95,6 @@ export default function personagens(){
                 </div>
                 </div>
 
-                {/* Hootie */}
                 <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8">
                 <a className="flex-shrink-0">
                     <img src={Hootie.src} className="w-40 h-auto object-cover rounded-full" alt="Hootie" />
@@ -117,7 +111,6 @@ export default function personagens(){
                 </div>
                 </div>
 
-                {/* Max */}
                 <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8">
                 <a className="flex-shrink-0">
                     <img src={Max.src} className="w-40 h-auto object-cover rounded-full" alt="Max" />
@@ -134,7 +127,6 @@ export default function personagens(){
                 </div>
                 </div>
 
-                {/* Ruth */}
                 <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8">
                 <a className="flex-shrink-0">
                     <img src={Ruth.src} className="w-40 h-auto object-cover rounded-full" alt="Ruth" />
@@ -143,7 +135,7 @@ export default function personagens(){
                     <h1 className="text-2xl font-bold text-gray-900">RUTH</h1>
                     <h2 className="text-xl font-semibold text-gray-700"><b>A sua conselheira favorita</b></h2>
                     <p className="text-gray-600 mt-2">
-                    Ruth é uma leoa ágil e protetora que não aceita "não" como resposta quando se trata de ajudar seus clientes e parceiros a terem sucesso.
+                    Ruth é ágil e protetora que não aceita "não" como resposta quando se trata de ajudar seus clientes e parceiros a terem sucesso.
                     </p>
                     <p className="text-gray-600 mt-2">
                     Ela personifica os Consultores da Salesforce, ajudando empresas de todos os tamanhos a implantar soluções para um sucesso nunca visto antes.
