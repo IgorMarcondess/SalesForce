@@ -68,6 +68,7 @@ export default function colaborador() {
                   <div className="p-5 bg-gray-300 flex flex-col rounded-lg border-2 border-gray-800 shadow-[8px_6px_0px_0px] shadow-gray-800">
                     <p className="text-gray-800 font-extrabold text-xl">{item.name}%</p>
                     <div className="flex justify-between">
+                    <p className="text-gray-500 font-semibold text-sm">{item.dataContato.toLocaleDateString()}</p>
                       <h1 className="text-gray-800 font-extrabold text-sm">{item.email}</h1>
                       <p className="text-gray-800 font-extrabold text-xl">{item.probabilidadeContratacao}%</p>
                     </div>

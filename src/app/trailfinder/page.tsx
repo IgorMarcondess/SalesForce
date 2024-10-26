@@ -158,6 +158,7 @@ export default function TrailFinder() {
               <option value="Estagiário">Estagiário</option>
               <option value="Gerente">Gerente</option>
               <option value="Analista">Analista</option>
+              <option value="CEO">CEO</option>
             </select>
           </div>
           <div className="">
@@ -182,7 +183,7 @@ export default function TrailFinder() {
               <option value="Comunicações">Comunicações</option>
               <option value="Bens de Consumo">Bens de Consumo</option>
               <option value="Educação">Educação</option>
-              <option value="Energia & Utilities">Energia & Utilities</option>
+              <option value="Energia & Utilities">Energia & Utilitie</option>
               <option value="Serviços Financeiros">Serviços Financeiros</option>
               <option value="Saúde & Ciências da Vida">Saúde & Ciências da Vida</option>
               <option value="Manufatura">Manufatura</option>
@@ -190,7 +191,6 @@ export default function TrailFinder() {
               <option value="Sem fins lucrativos">Sem fins lucrativos</option>
               <option value="Setor Público">Setor Público</option>
               <option value="Varejo">Varejo</option>
-              <option value="Tecnologia">Tecnologia</option>
             </select>
           </div>
           <div className="mt-2 flex justify-center">
