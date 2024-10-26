@@ -44,7 +44,6 @@ export default function Header() {
                                 <div className="py-1" role="none">
                                     <a href={"./trailfinder"} className="block px-4 py-2 text-sm text-gray-700" role="menuitem" id="menu-item-0">Trail Finder</a>
                                     <a href={"./loginColaborador"} className="block px-4 py-2 text-sm text-gray-700" role="menuitem" id="menu-item-1">Colaborador</a>
-                                    <a href="#" className="block px-4 py-2 text-sm text-gray-700" role="menuitem" id="menu-item-2">License</a>
                                 </div>
                             </div>
                         )}

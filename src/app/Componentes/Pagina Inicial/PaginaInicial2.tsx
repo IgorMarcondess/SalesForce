@@ -8,7 +8,7 @@ export default function PaginaInicial2(){
         <>
             <main className="mb-8 shadow-xl">
                 <div className="bg-azulEscuro-100 w-full h-full flex flex-col justify-center items-center p-4 md:bg-azulEscuro-100 md:w-full h-60 md:flex md:flex-row md:justify-left md:items-center md:p-4 md:justify-around">
-                    <h1 className="font-titulo text-2xl w-96 text-center text-slate-50 mb-6 mt-20 md:font-titulo md:text-xl md:w-48 md:text-center md:text-slate-50 ">Empresas que utilizam nosso software</h1>
+                    <h1 className="font-titulo text-2xl w-96 text-center text-slate-50 mb-6 mt-20 mt-[-.1px] md:font-titulo md:text-xl md:w-48 md:text-center md:text-slate-50 ">Empresas que utilizam nosso software</h1>
                     <div className="mini:hidden sm:hidden md:w-12 md:h-12 md:rounded-full md:bg-[rgb(20,20,20)] md:border-none md:font-semibold md:flex md:items-center md:justify-center md:rotate-[-90deg]">
                     <svg className="w-3 transition-all duration-300" viewBox="0 0 384 512">
                         <path
