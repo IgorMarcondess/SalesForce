@@ -37,6 +37,13 @@ export default function colaborador() {
       const sortedData = data.sort((a: item, b: item) => b.probabilidadeContratacao - a.probabilidadeContratacao);
 
       setData(sortedData);
+
+      const formattedData = data.map((item: item) => ({
+        ...item,
+        dataContato: new Date(item.dataContato),
+      }));
+    
+      setData(formattedData);
     } catch (error) {
       console.log('Fetch error:', error);
     }
@@ -45,6 +52,9 @@ export default function colaborador() {
   useEffect(() => {
     getData();
   }, []);
+
+
+
 
   return (
     <div className="flex">
@@ -66,11 +76,11 @@ export default function colaborador() {
               {data.map((item) => (
                 <div key={item.id} className="flex flex-col justify-center">
                   <div className="p-5 bg-gray-300 flex flex-col rounded-lg border-2 border-gray-800 shadow-[8px_6px_0px_0px] shadow-gray-800">
-                    <p className="text-gray-800 font-extrabold text-xl">{item.name}%</p>
+                    <p className="text-gray-800 font-extrabold text-xl">{item.name}</p>
                     <div className="flex justify-between">
                     <p className="text-gray-500 font-semibold text-sm">{item.dataContato.toLocaleDateString()}</p>
                       <h1 className="text-gray-800 font-extrabold text-sm">{item.email}</h1>
-                      <p className="text-gray-800 font-extrabold text-xl">{item.probabilidadeContratacao}%</p>
+                      <p className="text-gray-800 font-extrabold text-xl mt-[-4px]">{item.probabilidadeContratacao}%</p>
                     </div>
                     <div className="flex justify-between">
                       <p className="text-gray-500 font-semibold text-sm">{item.cargo}</p>
